@@ -11,20 +11,20 @@ const Grandpa = () => {
     // const house = 7;
     const [house, sethouse] = useState(1);
 
-    const ornaments = 'Diamonds Ring acah but dita parmu na apadtow aga nija skill develop karo';
+    const ornaments = 'Diamonds Ring';
 
     const handaleBuyAhouse = () =>{
         const newHouseCount =house + 1;
         sethouse(newHouseCount);
     }
     return (
-        <RingContext.Provider value={ornaments}>
+        <RingContext.Provider value={[ornaments, house]}>
             <div className='grandpa-container'>
                 <h1>Sabdhannnn, this is Grandpa area</h1>
                 <button onClick={handaleBuyAhouse}>Buy a house</button>
                 <p>house: {house}</p>
                 <div className='grandpa-details'>
-                    <Father house={house} ornaments={ornaments}></Father>
+                    <Father house={house}></Father>
                     <Uncal house={house} ></Uncal>
                     <Aunty house={house} ></Aunty>
                 </div>
