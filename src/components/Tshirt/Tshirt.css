@@ -1,0 +1,9 @@
+.tshirt-card{
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid rgb(106, 106, 231);
+    
+}
+.tshirt-card img{
+    height: 250px;
+}
